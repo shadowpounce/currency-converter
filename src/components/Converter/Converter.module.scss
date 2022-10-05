@@ -1,0 +1,35 @@
+.converter {
+  @apply shadow-md shadow-slate-300 rounded-md p-5 bg-white;
+  max-width: 600px;
+  max-height: 600px;
+
+  .selectRow {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .coursesRow {
+    @apply my-12 flex items-center justify-around;
+
+    @media (max-width: 600px) {
+      @apply flex-col gap-6;
+      margin: 30px 0;
+    }
+  }
+
+  .inputRow {
+    @apply my-10 flex items-center justify-around;
+
+    @media (max-width: 600px) {
+      margin: 0;
+      margin-top: 20px;
+      @apply flex-col items-center justify-center gap-5;
+    }
+
+    > div {
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+}

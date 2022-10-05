@@ -1,0 +1,30 @@
+.input {
+  width: 300px;
+  min-width: 300px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.inputGive {
+  input:disabled {
+    background-color: rgb(224, 224, 224);
+  }
+}
+
+.inputGive.disabled {
+  opacity: 0.8;
+
+  fieldset {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  div {
+    background-color: rgb(224, 224, 224);
+  }
+}
