@@ -8,7 +8,7 @@ import InputAdornment from '@mui/material/InputAdornment'
 
 import styles from './Inputs.module.scss'
 
-const Inputs = ({ rate, isSelected }) => {
+const Inputs = ({ rate, isSelected, currency }) => {
   const [giveValue, setGiveValue] = React.useState('')
   const [takeValue, setTakeValue] = React.useState('f')
 
@@ -57,7 +57,7 @@ const Inputs = ({ rate, isSelected }) => {
         }}
         value={takeValue}
         id="outlined-required"
-        label="Take:"
+        label={currency}
       />
     </>
   )

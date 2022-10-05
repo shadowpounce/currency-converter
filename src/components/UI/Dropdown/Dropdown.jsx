@@ -6,7 +6,7 @@ import Select from '@mui/material/Select'
 
 import styles from './Dropdown.module.scss'
 
-const Dropdown = ({ currenciesList, setRate, setSelected }) => {
+const Dropdown = ({ currenciesList, setRate, setSelected, setCurrency }) => {
   const value = React.useRef('Value')
 
   return (
@@ -27,6 +27,7 @@ const Dropdown = ({ currenciesList, setRate, setSelected }) => {
                 onClick={() => {
                   setRate(currency.rate)
                   setSelected(true)
+                  setCurrency(currency.cc)
                 }}
                 key={currency.cc}
                 value={currency.rate}

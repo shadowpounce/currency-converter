@@ -17,6 +17,8 @@ const Converter = () => {
 
   const [rate, setRate] = React.useState('')
 
+  const [currency, setCurrency] = React.useState('')
+
   console.log(rate)
 
   React.useEffect(() => {
@@ -60,10 +62,11 @@ const Converter = () => {
           setRate={setRate}
           label="I take:"
           currenciesList={currenciesList}
+          setCurrency={setCurrency}
         />
       </div>
       <div className={styles.inputRow}>
-        <Inputs isSelected={isSelected} rate={rate} />
+        <Inputs currency={currency} isSelected={isSelected} rate={rate} />
       </div>
     </div>
   )
